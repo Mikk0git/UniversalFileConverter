@@ -73,14 +73,58 @@ class App():
                 case ".png":
                     self.format_list.insert(1, ".jpg")
                     self.format_list.insert(2, ".webp")
+                    self.format_list.insert(3, ".gif")
+                    self.format_list.insert(4, ".bmp")
+                    self.format_list.insert(5, ".tiff")
                 case ".jpg" | ".jpeg":
                     self.format_list.insert(1, ".png")
                     self.format_list.insert(2, ".webp")
-                case ".webp" :
+                    self.format_list.insert(3, ".gif")
+                    self.format_list.insert(4, ".bmp")
+                    self.format_list.insert(5, ".tiff")
+                case ".webp":
                     self.format_list.insert(1, ".png")
                     self.format_list.insert(2, ".jpg")
+                    self.format_list.insert(3, ".gif")
+                    self.format_list.insert(4, ".bmp")
+                    self.format_list.insert(5, ".tiff")
                 case ".mp4":
                     self.format_list.insert(1, ".mov")
+                    self.format_list.insert(2, ".avi")
+                    self.format_list.insert(3, ".wmv")
+                    self.format_list.insert(4, ".flv")
+                    self.format_list.insert(5, ".mkv")
+                case ".mov":
+                    self.format_list.insert(1, ".mp4")
+                    self.format_list.insert(2, ".avi")
+                    self.format_list.insert(3, ".wmv")
+                    self.format_list.insert(4, ".flv")
+                    self.format_list.insert(5, ".mkv")
+                case ".mkv":
+                    self.format_list.insert(1, ".mp4")
+                    self.format_list.insert(2, ".avi")
+                    self.format_list.insert(3, ".wmv")
+                    self.format_list.insert(4, ".flv")
+                    self.format_list.insert(5, ".mp3")
+                    self.format_list.insert(6, ".wav")
+                    self.format_list.insert(7, ".aac")
+                    self.format_list.insert(8, ".ogg")
+                case ".mp3":
+                    self.format_list.insert(1, ".wav")
+                    self.format_list.insert(2, ".aac")
+                    self.format_list.insert(3, ".ogg")
+                case ".wav":
+                    self.format_list.insert(1, ".mp3")
+                    self.format_list.insert(2, ".aac")
+                    self.format_list.insert(3, ".ogg")
+                case ".aac":
+                    self.format_list.insert(1, ".mp3")
+                    self.format_list.insert(2, ".wav")
+                    self.format_list.insert(3, ".ogg")
+                case ".ogg":
+                    self.format_list.insert(1, ".mp3")
+                    self.format_list.insert(2, ".wav")
+                    self.format_list.insert(3, ".aac")
 
     def convert(self):
         selected_indices = self.format_list.curselection()
