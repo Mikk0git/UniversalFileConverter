@@ -45,8 +45,17 @@ class App():
                 i += 1
             print(file_ext)
 
+            letter = ""
+            i = 1
+            file_name = ""
+            while letter != "/" and letter != "\\":
+                letter = file_path[len(file_path) - i]
+                file_name = letter + file_name
+                i += 1
+            print(file_name)
 
-            self.file_ext_text.config(text="Your file extention is: "+ file_ext)
+
+            self.file_ext_text.config(text="Convert "+ file_name)
             
 
 
